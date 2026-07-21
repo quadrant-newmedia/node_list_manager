@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES2015",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "lib": ["ES2015", "DOM"],
+        "outDir": "dist",
+        "rootDir": "src/",
+
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "useUnknownInCatchVariables": true,
+        "exactOptionalPropertyTypes": true,
+        "noUncheckedIndexedAccess": true,
+
+
+        "declaration": true,
+        "declarationMap": false,
+        "sourceMap": false,
+    },
+    "include": ["src/"]
+}
