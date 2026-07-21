@@ -109,7 +109,7 @@ function set_child_nodes(
     const focused_node = get_focused_node(container);
 
     // Remove unwanted children from managed section
-    let cursor = start_anchor?.nextSibling ?? container.firstChild;
+    let cursor = start_anchor ? start_anchor.nextSibling : container.firstChild;
     while (cursor && cursor != end_anchor) {
         const next_node = cursor.nextSibling;
         if (!desired_child_nodes_set.has(cursor)) cursor.remove();
@@ -130,7 +130,7 @@ function set_child_nodes(
         - all children before cursor_node are already in order
         - cursor_node's position in the "managed children" is equal to managed_child_index
     */
-    cursor = start_anchor?.nextSibling ?? container.firstChild;
+    cursor = start_anchor ? start_anchor.nextSibling : container.firstChild;
     let managed_child_index = 0;
     while (cursor && cursor != end_anchor) {
         const desired_node = desired_nodes[managed_child_index];
@@ -178,7 +178,7 @@ function nodes_between(
     end_anchor: Node | null,
 ) {
     const result: Node[] = [];
-    let cursor = start_anchor?.nextSibling ?? container.firstChild;
+    let cursor = start_anchor ? start_anchor.nextSibling : container.firstChild;
     while (cursor && cursor != end_anchor) {
         result.push(cursor);
         cursor = cursor.nextSibling;
