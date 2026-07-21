@@ -1,5 +1,5 @@
 {
-  "name": "@qnc/element_list_manager",
+  "name": "@qnc/node_list_manager",
   "version": "1.0.0",
   "description": "\"vdom-library-like manipulation of an element's children\"",
   "license": "ISC",
@@ -9,8 +9,13 @@
   "scripts": {
     "test": "vitest run"
   },
+  "files": [
+    "dist/node_list_manager.d.ts",
+    "dist/node_list_manager.js"
+  ],
   "devDependencies": {
     "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
     "vitest": "^4.1.10"
   }
 }

@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
-import { NodeListManager } from "../src/element_list_manger.js";
+import { NodeListManager } from "../src/node_list_manager.js";
 
 // ---------------------------------------------------------------------------
 // Test fixture
