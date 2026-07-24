@@ -1,7 +1,7 @@
 {
   "name": "@qnc/node_list_manager",
-  "version": "1.0.0",
-  "description": "\"vdom-library-like manipulation of an element's children\"",
+  "version": "1.0.1",
+  "description": "Efficiently keeps a DOM node's children in sync with a data array",
   "license": "ISC",
   "author": "",
   "type": "module",
@@ -10,6 +10,7 @@
     "test": "vitest run"
   },
   "files": [
+    "README.md",
     "dist/node_list_manager.d.ts",
     "dist/node_list_manager.js"
   ],
